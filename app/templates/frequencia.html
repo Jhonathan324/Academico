@@ -38,22 +38,24 @@
 </nav>
 
 <div class="container mt-5">
-    <h2 class="mb-4">Tabela de Cidades</h2>
-    <table class="table table-bordered">
-    <thead>
-    <tr><th>Nome</th><th>UF</th></tr>
-    </thead>
-    <tbody>
-    {% for cidade in cidades %}
-    <tr>
-    <td>{{ cidade.nome }}</td>
-    <td>{{ cidade.uf }}</td>
-    </tr>
-    {% endfor %}
-    </tbody>
-    </table>
-    </div>
-    
+  <h2 class="mb-4">Tabela de Frequências</h2>
+  <table class="table table-bordered">
+  <thead>
+  <tr><th>Curso</th><th>Disciplina</th><th>Pessoa</th><th>Número de Faltas</th></tr>
+  </thead>
+  <tbody>
+  {% for frequencia in frequencias %}
+  <tr>
+  <td>{{ frequencia.curso }}</td>
+  <td>{{ frequencia.disciplina }}</td>
+  <td>{{ frequencia.pessoa }}</td>
+  <td>{{ frequencia.numero_faltas }}</td>
+  </tr>
+  {% endfor %}
+  </tbody>
+  </table>
+  </div>
+  
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>

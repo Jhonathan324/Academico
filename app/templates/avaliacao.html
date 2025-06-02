@@ -38,23 +38,24 @@
 </nav>
 
 <div class="container mt-5">
-    <h2 class="mb-4">Tabela de Cidades</h2>
-    <table class="table table-bordered">
-    <thead>
-    <tr><th>Nome</th><th>UF</th></tr>
-    </thead>
-    <tbody>
-    {% for cidade in cidades %}
-    <tr>
-    <td>{{ cidade.nome }}</td>
-    <td>{{ cidade.uf }}</td>
-    </tr>
-    {% endfor %}
-    </tbody>
-    </table>
-    </div>
-    
-
+  <h2 class="mb-4">Tabela de Avaliações</h2>
+  <table class="table table-bordered">
+  <thead>
+  <tr><th>Descrição</th><th>Curso</th><th>Disciplina</th><th>Tipo de Avaliação</th></tr>
+  </thead>
+  <tbody>
+  {% for avaliacao in avaliacoes %}
+  <tr>
+  <td>{{ avaliacao.descricao }}</td>
+  <td>{{ avaliacao.curso }}</td>
+  <td>{{ avaliacao.disciplina }}</td>
+  <td>{{ avaliacao.avaliacao_tipo }}</td>
+  </tr>
+  {% endfor %}
+  </tbody>
+  </table>
+  </div>
+  
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
